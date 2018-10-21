@@ -2,17 +2,25 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Utils\Timestampable;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use App\Validator\Constraints as AppAssert;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
 /**
  * @ApiResource()
+ * @ApiFilter(DateFilter::class, properties={"createdAt": {DateFilter::EXCLUDE_NULL} })
+ * @ApiFilter(SearchFilter::class, properties={"category.internal_id": "exact", "zip": "exact"})
  * @ORM\Entity(repositoryClass="App\Repository\JobRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Job
 {
+    use Timestampable;
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
