@@ -4,7 +4,8 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
-use ZipCodeValidator\Constraints\ZipCode;
+use Symfony\Component\Validator\Constraints as Assert;
+use App\Validator\Constraints as AppAssert;
 
 /**
  * @ApiResource()
@@ -21,12 +22,14 @@ class Job
 
     /**
      * @ORM\Column(type="string", length=50)
+     * @Assert\NotBlank()
+     * @Assert\Length(min="5", max="50")
      */
     private $title;
 
     /**
      * @ORM\Column(type="string", length=5)
-     * @ZipCode(iso="DE")
+     * @AppAssert\GermanZip()
      */
     private $zip;
 
@@ -42,6 +45,7 @@ class Job
 
     /**
      * @ORM\Column(type="datetime")
+     * @Assert\DateTime()
      */
     private $due_date;
 

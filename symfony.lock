@@ -92,6 +92,24 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.4.2"
+    },
+    "illuminate/contracts": {
+        "version": "v5.7.9"
+    },
+    "illuminate/filesystem": {
+        "version": "v5.7.9"
+    },
+    "illuminate/support": {
+        "version": "v5.7.9"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -103,6 +121,9 @@
             "version": "1.5",
             "ref": "f0436fc35fca88eada758311f8de43bfb61f1980"
         }
+    },
+    "nesbot/carbon": {
+        "version": "1.34.0"
     },
     "nikic/php-parser": {
         "version": "v4.1.0"
@@ -122,11 +143,20 @@
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
     },
+    "pragmarx/support": {
+        "version": "v0.8.8"
+    },
+    "pragmarx/zipcode": {
+        "version": "v1.5.4"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
     "psr/container": {
         "version": "1.0.0"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
     },
     "psr/log": {
         "version": "1.0.2"
@@ -218,6 +248,9 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.9.0"
     },
+    "symfony/polyfill-php72": {
+        "version": "v1.9.0"
+    },
     "symfony/process": {
         "version": "v4.1.6"
     },
@@ -280,6 +313,9 @@
             "version": "4.1",
             "ref": "0cdc982334f45d554957a6167e030482795bf9d7"
         }
+    },
+    "symfony/var-dumper": {
+        "version": "v4.1.6"
     },
     "symfony/web-server-bundle": {
         "version": "3.3",
