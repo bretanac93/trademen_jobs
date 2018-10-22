@@ -9,6 +9,9 @@ If you want to modify some parameter, feel free to do so, by modifying the `.env
 ## Technology
 The framework used for this project is Symfony 4 with PHP 7.2, the package used for the REST API and documentation design is [`api-platform`](https://api-platform.com/).
 
+## Testing
+A file is included in the project for testing the application, if you need to test it, then you have to install the composer dependencies (including the dev environment) and run the script `test.sh` included in the project, this will create a sqlite database only for testing purposes and drop it once is finished.
+
 ## Default data
 The default data (as categories) are included as migration, you don't need to import any sql file in order to get this data, once you start the project for the first time, they will be imported in the database by using [`doctrine-migrations-bundle`](https://symfony.com/doc/master/bundles/DoctrineMigrationsBundle/index.html)
 
