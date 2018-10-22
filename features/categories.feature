@@ -18,9 +18,7 @@ Feature:
               "id": 1,
               "internalId": "804040",
               "name": "Sonstige Umzugsleistungen",
-              "jobs": [
-                  "/api/jobs/1"
-              ]
+              "jobs": []
           },
           {
               "id": 2,

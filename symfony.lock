@@ -122,6 +122,9 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "facebook/webdriver": {
+        "version": "1.6.0"
+    },
     "guzzlehttp/guzzle": {
         "version": "6.3.3"
     },
@@ -287,6 +290,18 @@
     "symfony/orm-pack": {
         "version": "v1.0.5"
     },
+    "symfony/panther": {
+        "version": "1.0.x-dev"
+    },
+    "symfony/phpunit-bridge": {
+        "version": "4.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.1",
+            "ref": "b14c7f62fabeedf256d3211b0f704402b5530ba1"
+        }
+    },
     "symfony/polyfill-mbstring": {
         "version": "v1.9.0"
     },
@@ -325,6 +340,9 @@
     },
     "symfony/serializer": {
         "version": "v4.1.6"
+    },
+    "symfony/test-pack": {
+        "version": "dev-master"
     },
     "symfony/translation": {
         "version": "3.3",

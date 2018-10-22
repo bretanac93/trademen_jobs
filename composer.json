@@ -24,6 +24,7 @@
         "doctrine/doctrine-fixtures-bundle": "^3.0",
         "symfony/dotenv": "*",
         "symfony/maker-bundle": "^1.8",
+        "symfony/test-pack": "dev-master",
         "symfony/web-server-bundle": "*"
     },
     "config": {
