@@ -7,6 +7,12 @@ Feature:
   As a user
   I want to have a demo scenario
 
+  @createSchema
+  Scenario: It receives a response from Symfony's kernel
+    When a demo scenario sends a request to "/api"
+    Then the response should be received
+
+  @dropSchema
   Scenario: It receives a response from Symfony's kernel
     When a demo scenario sends a request to "/api"
     Then the response should be received
