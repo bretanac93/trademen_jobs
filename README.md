@@ -24,6 +24,6 @@ If you want to install the project manually, you have to go through the followin
 3. Make a copy of `.env.dist` and adjust the parameters inside (e.g. `DATABASE_URL`)
 4. Create the database: `bin/console doctrine:database:create`
 5. Run the migrations: `bin/console doctrine:migrations:migrate --no-interaction`
-6. Run the tests: `./vendor/bin/behat`
+6. Run the tests: `./test.sh` (Optional)
 7. Run the dev server: `bin/console server:run`
 8. Done.
